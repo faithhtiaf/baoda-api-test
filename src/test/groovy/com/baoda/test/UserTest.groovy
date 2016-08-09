@@ -25,15 +25,15 @@ class UserTest {
         assert register.status==HttpStatus.SC_OK
 
     }
-//    public void validateisactive(){
-//
-//       def res=restClient().get(path:API_PATH+"/user/email/activate?email=forever@mailinator.com&code=XXX")
-//
-//        def response=res.responseData
-//        print(response)
-//        assert res.status==401001
-//
-//    }
+    public void validateisactive(){
+
+       def res=restClient().get(path:API_PATH+"/user/email/activate?email=forever@mailinator.com&code=XXX")
+
+        def response=res.responseData
+        print(response)
+        assert res.status==401001
+
+    }
 
     public void ifloginsuccess(){
         def payload=[
